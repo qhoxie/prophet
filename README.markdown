@@ -25,3 +25,9 @@ Prophet is a web based frontend for [God](http://github.com/mojombo/god/tree/mas
 * Start God
 * From the Prophet root, run bin/merb
 * Load [http://localhost:4000](http://localhost:4000) in your browser
+
+## Screens
+### Normal View
+![prophet](http://omploader.org/vem9j)
+### Control View
+![prophet](http://omploader.org/vem9h)
