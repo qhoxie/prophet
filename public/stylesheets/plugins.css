@@ -1,0 +1,46 @@
+/* -------------------------------------------------------------- 
+   TABS - Starting point for turning lists into tabs.
+-------------------------------------------------------------- */
+
+ul.tabs { margin: 0; padding: 0; }
+ul.tabs li ul { float: left; }
+ul.tabs li { float: left; list-style: none; margin: 0; padding: 0; }
+ul.tabs li a { float: left; display: block; }
+
+/* Clearing floats without extra markup  */
+ul.tabs { display: inline-block; }
+ul.tabs:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+* html ul.tabs { height: 1%; }
+ul.tabs, ul.tabs li ul { display: block; }
+
+
+/* -------------------------------------------------------------- 
+   WRAPPER - Clearing floats without extra markup.
+-------------------------------------------------------------- */
+
+.wrapper { display: inline-block; }
+.wrapper:after { content: "."; display: block; height: 0; clear: both; visibility: hidden; }
+* html .wrapper { height: 1%; }
+.wrapper { display: block; }
+
+
+/* -------------------------------------------------------------- 
+   (h)orizontal Form and (v)ertical Form
+-------------------------------------------------------------- */
+
+/* hFORM */
+form.hform p { margin-bottom: 10px; }
+form.hform p label { float: left; width: 100px; }
+form.hform p input { width: 200px; }
+form.hform p select { width: 200px; }
+form.hform p input.button { width: auto; }
+form.hform p input.checkbox { width: auto; }
+form.hform p input.radio { width: auto; }
+form.hform p.checkbox { margin-left: 100px; }
+form.hform p.checkbox label { float: none; }
+form.hform p.checkbox input { width: auto; }
+
+/* vFORM */
+form.vform p { margin-bottom: 10px; }
+form.vform p label { display: block; }
+form.vform p.checkbox label { display: inline; }

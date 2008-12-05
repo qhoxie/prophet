@@ -1,0 +1,23 @@
+!!! Strict
+%html
+  %head
+    %title Prophet
+    = css_include_tag 'screen'
+    = css_include_tag 'jqModal'
+    = js_include_tag 'jquery'
+    = js_include_tag 'jqModal'
+    = js_include_tag 'main'
+  %body
+    #page
+      #header
+        #head_in
+          %h1#logo Prophet
+          %h2#tagline web messenger for god
+      #content
+        = catch_content :for_layout
+      #push
+    #footer
+      %h4
+        %a{:href => "http://github.com/qhoxie/prophet/tree"} Prophet
+        \ by 
+        %a{:href => "http://qhoxie.com"} Quin Hoxie

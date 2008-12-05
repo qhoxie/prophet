@@ -1,0 +1,120 @@
+@import "base.css";
+@import "plugins.css";
+
+/* -------------------------------------------------------------- 
+   SCREEN
+-------------------------------------------------------------- */
+
+/*
+ *  GENERAL
+ */
+ 
+* {
+  margin: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+html {
+	font-size: 100%;
+}
+
+body {
+  font-size: 62.5%;
+  background-color: #f1f1f1;
+  color: #000;
+}
+
+a, a:visited {
+  color: #19A2C9;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #52B9D7;
+  text-decoration: none;
+}
+
+#content {
+  width: 960px;
+  margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+#page {
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin: 0 auto -45px;
+}
+
+#push {
+  height: 40px;
+}
+
+#header {
+  padding: 5px 10px;
+  background-color: #e6e6e6;
+  border-bottom: 5px solid #a9a9a9;
+}
+
+#head_in {
+  margin: 0 auto;
+  width: 960px;
+}
+
+#logo {
+  color: #6e8baf;
+  font-size: 4.6em;
+}
+
+#tagline {
+  color: #a1b8d5;
+  font-size: 1.8em;
+  margin-top: -18px;
+  margin-left: 10px;
+  font-style: italic;
+}
+
+#footer {
+  text-align: center;
+  background-color: #e6e6e6;
+  border-top: 5px solid #a9a9a9;
+  padding: 10px 0;
+  height: 20px;
+  letter-spacing: 0.1em;
+}
+
+#svc-table {
+  font-size: 1.9em;
+  margin: 20px 0;
+  text-align: left;
+  width: 100%;
+}
+
+#svc-table th {
+  background: #B9C9FE none repeat scroll 0 0;
+  border-bottom: 1px solid #FFFFFF;
+  border-top: 4px solid #AABCFE;
+  color: #355eb0;
+  font-size: 1.1em;
+  font-weight: bold;
+  padding: 10px;
+}
+
+#svc-table td {
+  background: #E8EDFF none repeat scroll 0 0;
+  border-bottom: 1px solid #FFFFFF;
+  border-top: 1px solid transparent;
+  color: #666699;
+  padding: 10px;
+}
+
+#svc-table tr:hover td {
+  background: #D0DAFD none repeat scroll 0 0;
+  color: #333399;
+  cursor: pointer;
+}

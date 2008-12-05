@@ -1,0 +1,23 @@
+%table#svc-table
+  %thead
+    %tr
+      %th Service
+      %th Group
+      %th CPU
+      %th Memory
+      %th Status
+  %tbody
+    - @watches.keys.each do |svc|
+      %tr{:id => svc, :class => 'service'}
+        %td= svc
+        %td= @watches[svc].group.nil? ? "--" : @watches[svc].group
+        %td= "%.2f%%" % @watches[svc].cpu_usage
+        %td= @watches[svc].memory_usage.to_s + "kb"
+        %td= @watches[svc].state
+
+%div{:id => "controls", :class => "jqmWindow", :style => "display: none;"}
+  %h2#control_svc
+  = form :action => url(:control) do
+    = select :command, :collection => ACTIONS
+    = hidden_field :service, { :id => 'svc_field' }
+    = submit "Execute"
