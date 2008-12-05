@@ -17,7 +17,7 @@ Prophet is a web based frontend for [God](http://github.com/mojombo/god/tree/mas
 * More advanced authentication options
 
 ## Dependencies
-* God (from [qhoxie/god](http://github.com/qhoxie/god) for enchancements)
+* God (from [qhoxie/god](http://github.com/qhoxie/god) for enhancements)
 * Merb 1.0.x
 * DataMapper 0.9.x
 
